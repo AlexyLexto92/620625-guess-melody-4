@@ -6,6 +6,6 @@ const mocks = {
   errorCount: 5
 };
 it(`<WelcomeScreen/> shoud render welcomeScreen`, () => {
-  const tree = renderer.create(<WelcomeScreen gameTime={mocks.gameTime} errorCount={mocks.errorCount} />).toJSON();
+  const tree = renderer.create(<WelcomeScreen gameTime={mocks.gameTime} errorCount={mocks.errorCount} onWelcomeButtonClick={() => {}} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
